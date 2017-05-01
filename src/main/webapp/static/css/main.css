@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    font-family:monospace;
+}
+.navbar-container{
+    color:white;
+    background:#808080;
+    padding:15px;
+    box-shadow: 0 0 10px black;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+.navbar{
+    margin:0 auto;
+    width:800px;
+}
+.navbar span{
+    padding:10px;
+}
+.navbar span:hover{
+    cursor:pointer;
+    background:#737373;
+}
+.content-container{
+    margin:0 auto;
+    width:800px;
+}
+.field{
+    background:#e6e6e6;
+    padding:10px;
+    margin-bottom:10px;
+    box-shadow: 0 0 5px black;
+    border-radius:3px;
+
+}
+.subfield{
+    padding:10px;
+    margin:10px;
+    background:white;
+    /*float:left;*/
+    width:330px;
+    display:inline-block;
+    box-shadow: 0 0 10px #999999;
+}
+.subfield h2,h1{
+    margin:0;
+    padding:5px;
+}
+.subfield h3{
+    margin:0;
+    padding-top:10px;
+    padding-bottom:5px;
+}
+.subfield input,label{
+    margin-top:5px;
+}
+.subfield label:hover{
+    cursor:pointer;
+}
+.subfield-contents{
+    padding:5px;
+    padding-left:20px;
+}
+.subfield-contents table{
+    text-align:left;
+    margin-left:5px;
+}
+.subfield-contents th{
+    padding:5px;
+    font-weight:normal;
+}
+.aerobic-select{
+    padding:10px;
+}
