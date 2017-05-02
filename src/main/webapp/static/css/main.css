@@ -26,6 +26,8 @@ body{
 .content-container{
     margin:0 auto;
     width:800px;
+    height: auto !important;
+    min-height: 80%;
 }
 .field{
     background:#ffffff;
@@ -34,18 +36,14 @@ body{
 }
 .field h1{
     text-align:center;
+    margin:0;
 }
 .subfield{
     padding:10px;
-
 }
-.subfield h3{
-
-    padding-top:10px;
-    padding-bottom:5px;
-}
-.subfield input,label{
+.subfield input,label,textarea{
     margin-top:5px;
+    padding:5px;
 }
 .subfield label:hover{
     cursor:pointer;
@@ -53,6 +51,9 @@ body{
 .subfield-contents{
     padding:5px;
     padding-left:20px;
+    display:inline-block;
+    vertical-align:top;
+    width:370px;
 }
 .subfield-contents table{
     text-align:left;
@@ -62,6 +63,16 @@ body{
     padding:5px;
     font-weight:normal;
 }
+.notes{
+    display:inline-block;
+    vertical-align:top;
+}
 .aerobic-select{
     padding:10px;
+}
+.footer{
+    background:#6666ff;
+    box-shadow: 0 0 10px #6666ff;
+    height:100px;
+    margin-top:50px;
 }

@@ -3,10 +3,10 @@
 
 <div class="content-container">
     <div class="physiological field">
-        <h1>Physiological</h1>
+        <h1>PHYSIOLOGICAL</h1>
         <hr noshade size="1px">
         <div class="subfield">
-            <h2>Diet:</h2>
+            <h2>Diet</h2>
             <div class="subfield-contents">
                 <table>
                     <tr>
@@ -30,10 +30,12 @@
                         <th><input name="veg-fruit" type="number" id="veg-fruit"></th>
                     </tr>
                 </table>
-                <h3>Notes:</h3>
+            </div>
+            <div class="notes">
+                <h3>Notes</h3>
                 <textarea name="diet-notes" type="text" cols="30" rows="3"></textarea>
             </div>
-            <h2>Health:</h2>
+            <h2>Health</h2>
             <div class="subfield-contents">
                 <table>
                     <tr>
@@ -53,13 +55,15 @@
                         <th><input name="sleepQuality" type="number"></th>
                     </tr>
                 </table>
-                <h3>Notes:</h3>
+            </div>
+            <div class="notes">
+                <h3>Notes</h3>
                 <textarea name="health-notes" type="text" cols="30" rows="3"></textarea>
             </div>
-            <h2>Exercise:</h2>
+            <h2>Exercise</h2>
             <div class="subfield-contents">
                 <div class="aerobic">
-                    <h3>Aerobic:</h3>
+                    <h3>Aerobic</h3>
                     <div class="aerobic-select">
                         Ran <select name="run-distance">
                             <option selected value="0">0</option>
@@ -90,7 +94,7 @@
                     </div>
                 </div>
                 <div class="anaerobic">
-                    <h3>Anaerobic:</h3>
+                    <h3>Anaerobic</h3>
                     <table>
                         <tr>
                             <th>Bench</th>
@@ -106,14 +110,17 @@
                         </tr>
                     </table>
                 </div>
-                <h3>Notes:</h3>
+            </div>
+            <div class="notes">
+                <h3>Notes</h3>
                 <textarea name="exercise-notes" type="text" cols="30" rows="3"></textarea>
             </div>
         </div>
     </div>
-    <h1>Safety</h1><br>
     <div class="safety field">
-        <h2>Weather:</h2>
+        <h1>SAFETY</h1>
+        <hr noshade size="1px">
+        <h2>Weather</h2>
         <div class="subfield-contents">
             <table>
                 <tr>
@@ -140,12 +147,13 @@
                     <th><input type="checkbox"></th>
                 </tr>
             </table>
-            <h3>Notes:</h3>
+            <h3>Notes</h3>
             <textarea name="exercise-notes" type="text" cols="30" rows="3"></textarea>
         </div>
     </div>
-    <h1>Intimacy</h1><br>
     <div class="intimacy field">
+        <h1>INTIMACY</h1>
+        <hr noshade size="1px">
         <h2>Social</h2><br>
         <label for="interaction-count">Count</label>
         <input type="number" id="interaction-count">
@@ -153,8 +161,9 @@
         <input type="checkbox" id="sex">
         <label for="sex">Sex</label>
     </div>
-    <h1>Esteem</h1><br>
     <div class="esteem field">
+        <h1>ESTEEM</h1>
+        <hr noshade size="1px">
         <h2>Intellectual</h2><br>
         <input type="checkbox" id="reading">
         <label for="reading">Reading</label><br>
@@ -163,12 +172,14 @@
         <label for="thoughts">Thoughts</label><br>
         <textarea name="intellectual-thoughts" id="thoughts" cols="30" rows="10"></textarea>
     </div>
-    <h1>Actualization</h1><br>
     <div class="actualization field">
+        <h1>ACTUALIZATION</h1>
+        <hr noshade size="1px">
 
     </div>
-    <h1>Additional Thoughts</h1>
     <div class="field">
+        <h1>ADDITIONAL THOUGHTS</h1>
+        <hr noshade size="1px">
         <h2>Thoughts</h2><br>
         <textarea name="closing-thoughts" cols="30" rows="10"></textarea>
 
