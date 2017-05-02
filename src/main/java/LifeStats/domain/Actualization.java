@@ -13,7 +13,6 @@ public class Actualization {
     private Integer actualizationId;
 
     private Integer actualizationLevel;
-    private String actualizationNotes;
 
     public Actualization(){}
 
@@ -33,11 +32,4 @@ public class Actualization {
         this.actualizationLevel = actualizationLevel;
     }
 
-    public String getActualizationNotes() {
-        return actualizationNotes;
-    }
-
-    public void setActualizationNotes(String actualizationNotes) {
-        this.actualizationNotes = actualizationNotes;
-    }
 }

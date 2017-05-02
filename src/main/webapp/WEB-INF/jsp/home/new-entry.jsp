@@ -156,27 +156,60 @@
             </div>
         </div>
     </div>
-    <div class="intimacy field">
-        <h1>INTIMACY</h1>
+    <div class="social field">
+        <h1>SOCIAL</h1>
         <hr noshade size="1px">
         <div class="subfield">
-            <h2>Social</h2>
+            <h2>Friendships</h2>
             <div class="subfield-contents">
-                <label for="interaction-count">Count</label>
-                <input type="number" id="interaction-count">
+                <table>
+                    <tr>
+                        <th>Interactions</th>
+                        <th><input type="number" name="interaction-count"></th>
+                    </tr>
+                    <tr>
+                        <th>Quality</th>
+                        <th><input type="number" name="interaction-quality" placeholder="1 - 5"></th>
+                    </tr>
+                </table>
             </div>
             <div class="notes">
                 <h3>Notes</h3>
                 <textarea name="social-notes" type="text" cols="30" rows="3"></textarea>
             </div>
-            <h2>Sexual</h2>
+            <h2>Intimacy</h2>
             <div class="subfield-contents">
-                <input type="checkbox" id="sex">
-                <label for="sex">Sex</label>
+                <table>
+                    <tr>
+                        <th>Sexual Intimacy</th>
+                        <th><input type="checkbox" name="sex"></th>
+                    </tr>
+                    <tr>
+                        <th>Quality</th>
+                        <th><input type="number" name="sex-quality" placeholder="1 - 5"></th>
+                    </tr>
+                </table>
             </div>
             <div class="notes">
                 <h3>Notes</h3>
-                <textarea name="intimacy-notes" type="text" cols="30" rows="3"></textarea>
+                <textarea name="sex-notes" type="text" cols="30" rows="3"></textarea>
+            </div>
+            <h2>Family</h2>
+            <div class="subfield-contents">
+                <table>
+                    <tr>
+                        <th>Family</th>
+                        <th><input type="checkbox" name="family"></th>
+                    </tr>
+                    <tr>
+                        <th>Quality</th>
+                        <th><input type="number" name="family-quality" placeholder="1 - 5"></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="notes">
+                <h3>Notes</h3>
+                <textarea name="family-notes" type="text" cols="30" rows="3"></textarea>
             </div>
         </div>
     </div>
@@ -195,6 +228,13 @@
                 <h3>Notes</h3>
                 <textarea name="intellectual-notes" id="thoughts" cols="30" rows="3"></textarea>
             </div>
+            <h2>Work</h2>
+            <div class="subfield-contents">
+
+            </div>
+            <div class="notes">
+
+            </div>
         </div>
     </div>
     <div class="actualization field">
@@ -208,16 +248,15 @@
             <img src="../../../static/img/level5.jpg" alt="level 5">
             <img src="../../../static/img/level6.jpg" alt="level 6">
             <img src="../../../static/img/level7.jpg" alt="level 7">
-            <input type="hidden" >
         </div>
     </div>
     <div class="field">
         <h1>CLOSING THOUGHTS</h1>
         <hr noshade size="1px">
         <textarea id="closing-thoughts" name="closing-thoughts" ></textarea>
-    </div>
-    <div class="submit-container">
-        <button id="submit-final" type="submit">Submit</button>
+        <div class="submit-container">
+            <button id="submit-final" type="submit">Submit</button>
+        </div>
     </div>
 </div>
 

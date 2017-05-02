@@ -51,6 +51,9 @@ body{
 .subfield label:hover{
     cursor:pointer;
 }
+.subfield input[type=radio]{
+
+}
 .subfield img{
     width:100px;
     height:100px;
@@ -93,6 +96,7 @@ body{
     max-height:300px;
 }
 .submit-container{
+    margin-top:10px;
     text-align:center;
 }
 #submit-final{
