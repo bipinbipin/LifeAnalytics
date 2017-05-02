@@ -10,8 +10,8 @@
             <div class="subfield-contents">
                 <table>
                     <tr>
-                        <th>Sugar</th>
-                        <th><input name="sugar" type="number" id="sugars"></th>
+                        <th>Vegetable/Fruit</th>
+                        <th><input name="veg-fruit" type="number" id="veg-fruit"></th>
                     </tr>
                     <tr>
                         <th>Protein</th>
@@ -26,14 +26,14 @@
                         <th><input name="carbs" type="number" id="carbs"></th>
                     </tr>
                     <tr>
-                        <th>Vegetable/Fruit</th>
-                        <th><input name="veg-fruit" type="number" id="veg-fruit"></th>
+                        <th>Sugar</th>
+                        <th><input name="sugar" type="number" id="sugars"></th>
                     </tr>
                 </table>
             </div>
             <div class="notes">
                 <h3>Notes</h3>
-                <textarea name="diet-notes" type="text" cols="30" rows="3"></textarea>
+                <textarea name="diet-notes" type="text" cols="30" rows="5"></textarea>
             </div>
             <h2>Health</h2>
             <div class="subfield-contents">
@@ -58,7 +58,7 @@
             </div>
             <div class="notes">
                 <h3>Notes</h3>
-                <textarea name="health-notes" type="text" cols="30" rows="3"></textarea>
+                <textarea name="health-notes" type="text" cols="30" rows="5"></textarea>
             </div>
             <h2>Exercise</h2>
             <div class="subfield-contents">
@@ -101,7 +101,7 @@
                             <th><input type="number" id="bench"></th>
                         </tr>
                         <tr>
-                            <th>Squat</th>
+                            <th>Dips</th>
                             <th><input type="number" id="squat"></th>
                         </tr>
                         <tr>
@@ -113,69 +113,96 @@
             </div>
             <div class="notes">
                 <h3>Notes</h3>
-                <textarea name="exercise-notes" type="text" cols="30" rows="3"></textarea>
+                <textarea name="exercise-notes" type="text" cols="30" rows="5"></textarea>
             </div>
         </div>
     </div>
     <div class="safety field">
         <h1>SAFETY</h1>
         <hr noshade size="1px">
-        <h2>Weather</h2>
-        <div class="subfield-contents">
-            <table>
-                <tr>
-                    <th>Temperature</th>
-                    <th><input type="number"></th>
-                </tr>
-                <tr>
-                    <th>Precipitation</th>
-                    <th>
-                        <select name="precipitation">
-                            <option value="rain">Rain</option>
-                            <option value="storm">Storm</option>
-                            <option value="snow">Snow</option>
-                            <option value="blizzard">Blizzard</option>
-                        </select>
-                    </th>
-                </tr>
-                <tr>
-                    <th>Sun Exposure</th>
-                    <th><input type="checkbox" id="exposure"></th>
-                </tr>
-                <tr>
-                    <th>Life-Threatening Event</th>
-                    <th><input type="checkbox"></th>
-                </tr>
-            </table>
-            <h3>Notes</h3>
-            <textarea name="exercise-notes" type="text" cols="30" rows="3"></textarea>
+        <div class="subfield">
+            <h2>Weather</h2>
+            <div class="subfield-contents">
+                <table>
+                    <tr>
+                        <th>Temperature</th>
+                        <th><input type="number"></th>
+                    </tr>
+                    <tr>
+                        <th>Precipitation</th>
+                        <th>
+                            <select name="precipitation">
+                                <option value="none">None</option>
+                                <option value="rain">Rain</option>
+                                <option value="storm">Storm</option>
+                                <option value="snow">Snow</option>
+                                <option value="blizzard">Blizzard</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Sun Exposure (min)</th>
+                        <th><input type="number" id="exposure"></th>
+                    </tr>
+                    <tr>
+                        <th>Life-Threatening Event</th>
+                        <th><input type="checkbox"></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="notes">
+                <h3>Notes</h3>
+                <textarea name="weather-notes" type="text" cols="30" rows="3"></textarea>
+            </div>
         </div>
     </div>
     <div class="intimacy field">
         <h1>INTIMACY</h1>
         <hr noshade size="1px">
-        <h2>Social</h2><br>
-        <label for="interaction-count">Count</label>
-        <input type="number" id="interaction-count">
-        <h2>Sexual</h2><br>
-        <input type="checkbox" id="sex">
-        <label for="sex">Sex</label>
+        <div class="subfield">
+            <h2>Social</h2>
+            <div class="subfield-contents">
+                <label for="interaction-count">Count</label>
+                <input type="number" id="interaction-count">
+            </div>
+            <div class="notes">
+                <h3>Notes</h3>
+                <textarea name="social-notes" type="text" cols="30" rows="3"></textarea>
+            </div>
+            <h2>Sexual</h2>
+            <div class="subfield-contents">
+                <input type="checkbox" id="sex">
+                <label for="sex">Sex</label>
+            </div>
+            <div class="notes">
+                <h3>Notes</h3>
+                <textarea name="intimacy-notes" type="text" cols="30" rows="3"></textarea>
+            </div>
+        </div>
     </div>
     <div class="esteem field">
         <h1>ESTEEM</h1>
         <hr noshade size="1px">
-        <h2>Intellectual</h2><br>
-        <input type="checkbox" id="reading">
-        <label for="reading">Reading</label><br>
-        <input type="checkbox" id="digital">
-        <label for="digital">Digital</label><br>
-        <label for="thoughts">Thoughts</label><br>
-        <textarea name="intellectual-thoughts" id="thoughts" cols="30" rows="10"></textarea>
+        <div class="subfield">
+            <h2>Intellectual</h2>
+            <div class="subfield-contents">
+                <input type="checkbox" id="reading">
+                <label for="reading">Reading</label><br>
+                <input type="checkbox" id="digital">
+                <label for="digital">Digital</label><br>
+            </div>
+            <div class="notes">
+                <h3>Notes</h3>
+                <textarea name="intellectual-notes" id="thoughts" cols="30" rows="3"></textarea>
+            </div>
+        </div>
     </div>
     <div class="actualization field">
         <h1>ACTUALIZATION</h1>
         <hr noshade size="1px">
+        <div class="subfield">
 
+        </div>
     </div>
     <div class="field">
         <h1>ADDITIONAL THOUGHTS</h1>
