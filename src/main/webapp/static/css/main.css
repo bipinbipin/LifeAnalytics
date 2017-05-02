@@ -48,6 +48,10 @@ body{
     margin-top:5px;
     padding:5px;
 }
+.subfield input{
+    border:none;
+    border-bottom:2px solid;
+}
 .subfield label:hover{
     cursor:pointer;
 }

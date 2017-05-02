@@ -233,7 +233,8 @@
 
             </div>
             <div class="notes">
-
+                <h3>Notes</h3>
+                <textarea name="work-notes" cols="30" rows="3"></textarea>
             </div>
         </div>
     </div>
