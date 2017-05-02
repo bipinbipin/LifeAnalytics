@@ -201,19 +201,24 @@
         <h1>ACTUALIZATION</h1>
         <hr noshade size="1px">
         <div class="subfield">
-
+            <img src="../../../static/img/level1.jpg" alt="level 1">
+            <img src="../../../static/img/level2.jpg" alt="level 2">
+            <img src="../../../static/img/level3.jpg" alt="level 3">
+            <img src="../../../static/img/level4.jpg" alt="level 4">
+            <img src="../../../static/img/level5.jpg" alt="level 5">
+            <img src="../../../static/img/level6.jpg" alt="level 6">
+            <img src="../../../static/img/level7.jpg" alt="level 7">
+            <input type="hidden" >
         </div>
     </div>
     <div class="field">
-        <h1>ADDITIONAL THOUGHTS</h1>
+        <h1>CLOSING THOUGHTS</h1>
         <hr noshade size="1px">
-        <h2>Thoughts</h2><br>
-        <textarea name="closing-thoughts" cols="30" rows="10"></textarea>
-
-        <h2>Rating</h2><br>
-        <input type="number">
+        <textarea id="closing-thoughts" name="closing-thoughts" ></textarea>
     </div>
-    <button type="submit">Submit</button>
+    <div class="submit-container">
+        <button id="submit-final" type="submit">Submit</button>
+    </div>
 </div>
 
 <%@include file="../includes/footer.jsp"%>

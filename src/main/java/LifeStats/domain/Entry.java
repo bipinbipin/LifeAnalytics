@@ -1,6 +1,7 @@
 package LifeStats.domain;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Created by David Franzel on 4/27/2017.
@@ -23,16 +24,16 @@ public class Entry {
     @OneToOne
     private Actualization actualization;
 
-    private Integer rating;
+    private Date entryDate;
 
     public Entry(){}
 
-    public Integer getRating() {
-        return rating;
+    public Date getEntryDate() {
+        return entryDate;
     }
 
-    public void setRating(Integer rating) {
-        this.rating = rating;
+    public void setEntryDate(Date entryDate) {
+        this.entryDate = entryDate;
     }
 
     public Integer getEntryId() {
