@@ -2,34 +2,10 @@
 <%@include file="../includes/navbar.jsp"%>
 
 <div class="content-container">
-    <h1>Physiological</h1><br>
     <div class="physiological field">
-        <div class="health subfield">
-            <h2>Health:</h2>
-            <div class="subfield-contents">
-                <table>
-                    <tr>
-                        <th>Sick</th>
-                        <th><input name="sick" type="checkbox"></th>
-                    </tr>
-                    <tr>
-                        <th>Energy Level</th>
-                        <th><input name="energyLevel" type="number"></th>
-                    </tr>
-                    <tr>
-                        <th>Sleep Hours</th>
-                        <th><input name="sleepHours" type="number"></th>
-                    </tr>
-                    <tr>
-                        <th>Sleep Quality</th>
-                        <th><input name="sleepQuality" type="number"></th>
-                    </tr>
-                </table>
-                <h3>Notes:</h3>
-                <textarea name="health-notes" type="text" cols="30" rows="3"></textarea>
-            </div>
-        </div>
-        <div class="diet subfield">
+        <h1>Physiological</h1>
+        <hr noshade size="1px">
+        <div class="subfield">
             <h2>Diet:</h2>
             <div class="subfield-contents">
                 <table>
@@ -57,8 +33,29 @@
                 <h3>Notes:</h3>
                 <textarea name="diet-notes" type="text" cols="30" rows="3"></textarea>
             </div>
-        </div>
-        <div class="exercise subfield">
+            <h2>Health:</h2>
+            <div class="subfield-contents">
+                <table>
+                    <tr>
+                        <th>Sick</th>
+                        <th><input name="sick" type="checkbox"></th>
+                    </tr>
+                    <tr>
+                        <th>Energy Level</th>
+                        <th><input name="energyLevel" type="number"></th>
+                    </tr>
+                    <tr>
+                        <th>Sleep Hours</th>
+                        <th><input name="sleepHours" type="number"></th>
+                    </tr>
+                    <tr>
+                        <th>Sleep Quality</th>
+                        <th><input name="sleepQuality" type="number"></th>
+                    </tr>
+                </table>
+                <h3>Notes:</h3>
+                <textarea name="health-notes" type="text" cols="30" rows="3"></textarea>
+            </div>
             <h2>Exercise:</h2>
             <div class="subfield-contents">
                 <div class="aerobic">
@@ -116,62 +113,55 @@
     </div>
     <h1>Safety</h1><br>
     <div class="safety field">
-        <div class="outside subfield">
-            <div class="subfield-contents">
-                <table>
-                    <tr>
-                        <th>Temperature</th>
-                        <th><input type="number"></th>
-                    </tr>
-                    <tr>
-                        <th>Precipitation</th>
-                        <th>
-                            <select name="precipitation">
-                                <option value="rain">Rain</option>
-                                <option value="storm">Storm</option>
-                                <option value="snow">Snow</option>
-                                <option value="blizzard">Blizzard</option>
-                            </select>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Sun Exposure</th>
-                        <th><input type="checkbox" id="exposure"></th>
-                    </tr>
-                    <tr>
-                        <th>Life-Threatening Event</th>
-                        <th><input type="checkbox"></th>
-                    </tr>
-                </table>
-                <h3>Notes:</h3>
-                <textarea name="exercise-notes" type="text" cols="30" rows="3"></textarea>
-            </div>
+        <h2>Weather:</h2>
+        <div class="subfield-contents">
+            <table>
+                <tr>
+                    <th>Temperature</th>
+                    <th><input type="number"></th>
+                </tr>
+                <tr>
+                    <th>Precipitation</th>
+                    <th>
+                        <select name="precipitation">
+                            <option value="rain">Rain</option>
+                            <option value="storm">Storm</option>
+                            <option value="snow">Snow</option>
+                            <option value="blizzard">Blizzard</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Sun Exposure</th>
+                    <th><input type="checkbox" id="exposure"></th>
+                </tr>
+                <tr>
+                    <th>Life-Threatening Event</th>
+                    <th><input type="checkbox"></th>
+                </tr>
+            </table>
+            <h3>Notes:</h3>
+            <textarea name="exercise-notes" type="text" cols="30" rows="3"></textarea>
         </div>
     </div>
     <h1>Intimacy</h1><br>
     <div class="intimacy field">
-        <div class="social subfield">
-            <h2>Social</h2><br>
-            <label for="interaction-count">Count</label>
-            <input type="number" id="interaction-count">
-        </div>
-        <div class="sexual subfield">
-            <h2>Sexual</h2><br>
-            <input type="checkbox" id="sex">
-            <label for="sex">Sex</label>
-        </div>
+        <h2>Social</h2><br>
+        <label for="interaction-count">Count</label>
+        <input type="number" id="interaction-count">
+        <h2>Sexual</h2><br>
+        <input type="checkbox" id="sex">
+        <label for="sex">Sex</label>
     </div>
     <h1>Esteem</h1><br>
     <div class="esteem field">
-        <div class="intellectual subfield">
-            <h2>Intellectual</h2><br>
-            <input type="checkbox" id="reading">
-            <label for="reading">Reading</label><br>
-            <input type="checkbox" id="digital">
-            <label for="digital">Digital</label><br>
-            <label for="thoughts">Thoughts</label><br>
-            <textarea name="intellectual-thoughts" id="thoughts" cols="30" rows="10"></textarea>
-        </div>
+        <h2>Intellectual</h2><br>
+        <input type="checkbox" id="reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="digital">
+        <label for="digital">Digital</label><br>
+        <label for="thoughts">Thoughts</label><br>
+        <textarea name="intellectual-thoughts" id="thoughts" cols="30" rows="10"></textarea>
     </div>
     <h1>Actualization</h1><br>
     <div class="actualization field">
@@ -179,14 +169,11 @@
     </div>
     <h1>Additional Thoughts</h1>
     <div class="field">
-        <div class="closing-thoughts subfield">
-            <h2>Thoughts</h2><br>
-            <textarea name="closing-thoughts" cols="30" rows="10"></textarea>
-        </div>
-        <div class="rating subfield">
-            <h2>Rating</h2><br>
-            <input type="number">
-        </div>
+        <h2>Thoughts</h2><br>
+        <textarea name="closing-thoughts" cols="30" rows="10"></textarea>
+
+        <h2>Rating</h2><br>
+        <input type="number">
     </div>
     <button type="submit">Submit</button>
 </div>

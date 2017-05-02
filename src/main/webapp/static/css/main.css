@@ -1,12 +1,13 @@
 body{
     margin:0;
-    font-family:monospace;
+    font-family:'Source Sans Pro';
+    background:#e6e6ff;
 }
 .navbar-container{
     color:white;
-    background:#808080;
+    background:#6666ff;
     padding:15px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px #6666ff;
     font-size:18px;
     font-weight:bold;
     margin-bottom:15px;
@@ -20,35 +21,26 @@ body{
 }
 .navbar span:hover{
     cursor:pointer;
-    background:#737373;
+    background:#4d4dff;
 }
 .content-container{
     margin:0 auto;
     width:800px;
 }
 .field{
-    background:#e6e6e6;
-    padding:10px;
+    background:#ffffff;
+    padding:20px;
     margin-bottom:10px;
-    box-shadow: 0 0 5px black;
-    border-radius:3px;
-
+}
+.field h1{
+    text-align:center;
 }
 .subfield{
     padding:10px;
-    margin:10px;
-    background:white;
-    /*float:left;*/
-    width:330px;
-    display:inline-block;
-    box-shadow: 0 0 10px #999999;
-}
-.subfield h2,h1{
-    margin:0;
-    padding:5px;
+
 }
 .subfield h3{
-    margin:0;
+
     padding-top:10px;
     padding-bottom:5px;
 }
