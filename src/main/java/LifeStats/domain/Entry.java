@@ -28,7 +28,7 @@ public class Entry {
 
     public Entry(){}
 
-    public Date getEntryDate() {
+    public Date getEntryDate(){
         return entryDate;
     }
 
