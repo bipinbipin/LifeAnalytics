@@ -6,7 +6,7 @@ import javax.persistence.*;
  * Created by David Franzel on 4/28/2017.
  */
 @Entity
-public class Intimacy {
+public class Social {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -18,7 +18,7 @@ public class Intimacy {
     private Integer socialQuality;
     private String intimacyNotes;
 
-    public Intimacy(){}
+    public Social(){}
 
     public Integer getIntimacyId() {
         return intimacyId;

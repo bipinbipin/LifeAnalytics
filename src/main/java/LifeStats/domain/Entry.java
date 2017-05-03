@@ -18,7 +18,7 @@ public class Entry {
     @OneToOne
     private Safety safety;
     @OneToOne
-    private Intimacy intimacy;
+    private Social intimacy;
     @OneToOne
     private Esteem esteem;
     @OneToOne
@@ -60,11 +60,11 @@ public class Entry {
         this.safety = safety;
     }
 
-    public Intimacy getIntimacy() {
+    public Social getIntimacy() {
         return intimacy;
     }
 
-    public void setIntimacy(Intimacy intimacy) {
+    public void setIntimacy(Social intimacy) {
         this.intimacy = intimacy;
     }
 
