@@ -3,8 +3,9 @@
 
 <div class="content-container">
     <div class="physiological field">
-        <h1>PHYSIOLOGICAL</h1>
-        <hr noshade size="1px">
+        <div class="field-header">
+            <h1>Physiological</h1>
+        </div>
         <div class="subfield">
             <h2>Diet</h2>
             <div class="subfield-contents">
@@ -118,8 +119,9 @@
         </div>
     </div>
     <div class="safety field">
-        <h1>SAFETY</h1>
-        <hr noshade size="1px">
+        <div class="field-header">
+            <h1>Safety</h1>
+        </div>
         <div class="subfield">
             <h2>Weather</h2>
             <div class="subfield-contents">
@@ -157,8 +159,9 @@
         </div>
     </div>
     <div class="social field">
-        <h1>SOCIAL</h1>
-        <hr noshade size="1px">
+        <div class="field-header">
+            <h1>SOCIAL</h1>
+        </div>
         <div class="subfield">
             <h2>Friendships</h2>
             <div class="subfield-contents">
@@ -214,8 +217,9 @@
         </div>
     </div>
     <div class="esteem field">
-        <h1>ESTEEM</h1>
-        <hr noshade size="1px">
+        <div class="field-header">
+            <h1>ESTEEM</h1>
+        </div>
         <div class="subfield">
             <h2>Intellectual</h2>
             <div class="subfield-contents">
@@ -239,8 +243,9 @@
         </div>
     </div>
     <div class="actualization field">
-        <h1>ACTUALIZATION</h1>
-        <hr noshade size="1px">
+        <div class="field-header">
+            <h1>ACTUALIZATION</h1>
+        </div>
         <div class="subfield">
             <img src="../../../static/img/level1.jpg" alt="level 1">
             <img src="../../../static/img/level2.jpg" alt="level 2">
@@ -252,8 +257,9 @@
         </div>
     </div>
     <div class="field">
-        <h1>CLOSING THOUGHTS</h1>
-        <hr noshade size="1px">
+        <div class="field-header">
+            <h1>CLOSING THOUGHTS</h1>
+        </div>
         <textarea id="closing-thoughts" name="closing-thoughts" ></textarea>
         <div class="submit-container">
             <button id="submit-final" type="submit">Submit</button>

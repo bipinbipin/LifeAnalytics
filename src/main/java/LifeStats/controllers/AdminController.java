@@ -22,7 +22,7 @@ public class AdminController {
         return "/index";
     }
 
-    @RequestMapping(value = "/home", method = RequestMethod.GET)
+    @RequestMapping(value = "/new-entry", method = RequestMethod.GET)
     public String main(){
         return "/home/new-entry";
     }
