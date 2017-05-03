@@ -32,7 +32,7 @@ public class Entry {
         return entryDate;
     }
 
-    public void setEntryDate(Date entryDate) {
+    public void setEntryDate(Date entryDate){
         this.entryDate = entryDate;
     }
 
