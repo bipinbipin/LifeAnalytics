@@ -34,4 +34,5 @@ public class EntryServiceImpl implements EntryService {
     public Iterable<Entry> findAllEntries() {
         return userRepository.findAll();
     }
+
 }
