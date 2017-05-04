@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Created by David Franzel on 5/4/2017.
  */
 
-public class SeleniumTests {
+public class SeleniumTest {
 
     @Test
     public void SeleniumWebDriverTest() throws InterruptedException{
