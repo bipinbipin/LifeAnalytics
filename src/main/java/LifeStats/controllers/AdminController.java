@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by David Franzel on 4/27/2017.
@@ -30,14 +31,14 @@ public class AdminController {
         return "/views/new-entry";
     }
 
-    @RequestMapping(value = "/user/stats/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/analytics", method = RequestMethod.GET)
     public String mainPage(Model model,
                            Integer id){
 
-        Entry user = entryService.getEntryById(id);
-        model.addAttribute("user", user);
+        Iterable<Entry> entries = entryService.findAllEntries();
+        model.addAttribute("entries",entries);
 
-        return "/views/new-entry";
+        return "/views/analytics";
     }
 
     @RequestMapping(value = "/entry-submit",method = RequestMethod.POST)

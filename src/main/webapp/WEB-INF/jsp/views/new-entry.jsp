@@ -239,23 +239,24 @@
             <div class="field-content">
                 <div class="subfield">
                     <div class="subfield-img">
-                        <img src="../../../static/img/level1.jpg" alt="level 1">
-                        <img src="../../../static/img/level2.jpg" alt="level 2">
-                        <img src="../../../static/img/level3.jpg" alt="level 3">
-                        <img src="../../../static/img/level4.jpg" alt="level 4">
-                        <img src="../../../static/img/level5.jpg" alt="level 5">
-                        <img src="../../../static/img/level6.jpg" alt="level 6">
-                        <img src="../../../static/img/level7.jpg" alt="level 7">
+                        <img id="level1" src="../../../static/img/level1.jpg" alt="level 1">
+                        <img id="level2" src="../../../static/img/level2.jpg" alt="level 2">
+                        <img id="level3" src="../../../static/img/level3.jpg" alt="level 3">
+                        <img id="level4" src="../../../static/img/level4.jpg" alt="level 4">
+                        <img id="level5" src="../../../static/img/level5.jpg" alt="level 5">
+                        <img id="level6" src="../../../static/img/level6.jpg" alt="level 6">
+                        <img id="level7" src="../../../static/img/level7.jpg" alt="level 7">
                     </div>
                     Actualization Level
-                    <input required name="actualizationLevel" type="number" >
+                    <input required id="actualizationLevel" name="actualizationLevel" type="number" >
                 </div>
                 <h4>Closing Notes</h4>
                 <textarea name="closingNotes" class="closing-thoughts" ></textarea>
             </div>
         </div>
-
-        <div class="submit-final">SUBMIT</div>
+        <div class="submit-final-container">
+            <button type="submit" class="submit-final">SUBMIT</button>
+        </div>
 
     </form:form>
 

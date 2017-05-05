@@ -13,6 +13,7 @@
 
     <%--CSS--%>
     <link rel="stylesheet" href="/static/css/main.css"/>
+    <link rel="stylesheet" href="/static/css/analytics.css"/>
 
     <%--JAVASCRIPT--%>
     <script src="/static/js/main.js"></script>
