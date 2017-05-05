@@ -1,4 +1,4 @@
-package LifeStats.configuration;
+package SeleniumWebDriver.configuration;
 
 import org.h2.server.web.WebServlet;
 import org.springframework.boot.context.embedded.ServletRegistrationBean;

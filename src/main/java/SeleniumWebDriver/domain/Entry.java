@@ -1,4 +1,4 @@
-package LifeStats.domain;
+package SeleniumWebDriver.domain;
 
 import javax.persistence.*;
 import java.util.Date;

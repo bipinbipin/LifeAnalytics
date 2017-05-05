@@ -1,8 +1,8 @@
-package LifeStats.services.Impl;
+package SeleniumWebDriver.services.Impl;
 
-import LifeStats.domain.Entry;
-import LifeStats.repositories.EntryRepository;
-import LifeStats.services.EntryService;
+import SeleniumWebDriver.domain.Entry;
+import SeleniumWebDriver.repositories.EntryRepository;
+import SeleniumWebDriver.services.EntryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

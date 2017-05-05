@@ -1,15 +1,11 @@
-package LifeStats;
+package SeleniumWebDriver;
 
 
-import LifeStats.configuration.RepositoryConfiguration;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
  * Created by David Franzel on 5/4/2017.
@@ -26,8 +22,7 @@ public class SeleniumTest {
         driver.get("http://www.wikipedia.org");
         String title = driver.getTitle();
         System.out.println(title);
-        WebElement link;
-        link = driver.findElement(By.id("js-link-box-en"));
+        WebElement link = driver.findElement(By.id("js-link-box-en"));
         link.click();
         Thread.sleep(2000);
         WebElement searchBox;
@@ -36,9 +31,6 @@ public class SeleniumTest {
         searchBox.sendKeys("David ");
         searchBox.sendKeys("Franzel");
         searchBox.submit();
-        WebElement link1;
-
-        link1 = driver.findElement(By.className("mw-search-result-heading"));
 
         Thread.sleep(2000);
 //		driver.quit();

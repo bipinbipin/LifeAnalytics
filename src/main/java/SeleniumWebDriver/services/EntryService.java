@@ -1,6 +1,6 @@
-package LifeStats.services;
+package SeleniumWebDriver.services;
 
-import LifeStats.domain.Entry;
+import SeleniumWebDriver.domain.Entry;
 
 /**
  * Created by David Franzel on 4/27/2017.

@@ -292,10 +292,10 @@
         </div>
         <div class="field-content">
             <textarea id="closing-thoughts" name="closing-thoughts" ></textarea>
-            <div class="submit-container">
-                <button id="submit-final" type="submit">Submit</button>
-            </div>
         </div>
+    </div>
+    <div class="submit-container">
+        <button id="submit-final" type="submit">Submit</button>
     </div>
 </div>
 

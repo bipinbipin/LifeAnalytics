@@ -1,7 +1,7 @@
-package LifeStats.controllers;
+package SeleniumWebDriver.controllers;
 
-import LifeStats.domain.Entry;
-import LifeStats.services.EntryService;
+import SeleniumWebDriver.domain.Entry;
+import SeleniumWebDriver.services.EntryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

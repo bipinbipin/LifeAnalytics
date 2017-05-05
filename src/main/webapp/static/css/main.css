@@ -36,19 +36,23 @@ body{
 }
 .field{
     background:whitesmoke;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
+    border-radius:5px;
     margin-bottom:15px;
     box-shadow: 0 0 10px #a6a6a6;
+}
+.field-header{
+    border-radius:5px;
+}
+.field-header:hover{
+    cursor:pointer;
 }
 .field h1{
     text-align:center;
     margin:0;
     background:#0099cc;
     padding:10px;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
-    color:whitesmoke;
+    border-radius:inherit;
+    color:white;
 }
 .field-content{
     border:solid 1px #bfbfbf;

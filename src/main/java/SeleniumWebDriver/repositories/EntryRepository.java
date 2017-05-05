@@ -1,6 +1,6 @@
-package LifeStats.repositories;
+package SeleniumWebDriver.repositories;
 
-import LifeStats.domain.Entry;
+import SeleniumWebDriver.domain.Entry;
 import org.springframework.data.repository.CrudRepository;
 
 /**

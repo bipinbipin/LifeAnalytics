@@ -1,7 +1,7 @@
-package LifeStats.bootstrap;
+package SeleniumWebDriver.bootstrap;
 
-import LifeStats.domain.Entry;
-import LifeStats.services.EntryService;
+import SeleniumWebDriver.domain.Entry;
+import SeleniumWebDriver.services.EntryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
