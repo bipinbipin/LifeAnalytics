@@ -3,13 +3,11 @@ package LifeStats.controllers;
 import LifeStats.domain.*;
 import LifeStats.domain.VO.EntryVO;
 import LifeStats.services.EntryService;
-import org.apache.xpath.operations.Bool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Date;
 
@@ -80,6 +78,8 @@ public class AdminController {
         safety.setSleepQuality(entryVO.getSleepQuality());
         if(entryVO.getSick() == null){
             safety.setIsSick(false);
+        }else{
+            safety.setIsSick(true);
         }
         safety.setHealthNotes(entryVO.getHealthNotes());
         safety.setTemperature(entryVO.getTemperature());
@@ -87,9 +87,13 @@ public class AdminController {
         safety.setSunExposure(entryVO.getSunExposure());
         if(entryVO.getLifeThreatened() == null){
             safety.setLifeThreatened(false);
+        }else{
+            safety.setLifeThreatened(true);
         }
         if(entryVO.getFinancialStress() == null){
             safety.setFinancialStress(false);
+        }else{
+            safety.setFinancialStress(true);
         }
         safety.setEnvironmentNotes(entryVO.getEnvironmentNotes());
 
@@ -101,15 +105,23 @@ public class AdminController {
         Esteem esteem = new Esteem();
         if(entryVO.getReading() == null){
             esteem.setReading(false);
+        }else{
+            esteem.setReading(true);
         }
         if(entryVO.getVideo() == null){
             esteem.setVideo(false);
+        }else{
+            esteem.setVideo(true);
         }
         if(entryVO.getPodcast() == null){
             esteem.setPodcast(false);
+        }else{
+            esteem.setPodcast(true);
         }
         if(entryVO.getConversation() == null){
             esteem.setConversation(false);
+        }else{
+            esteem.setConversation(true);
         }
         esteem.setIntellectualQuality(entryVO.getIntellectualQuality());
         esteem.setIntellectualNotes(entryVO.getIntellectualNotes());

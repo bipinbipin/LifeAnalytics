@@ -31,7 +31,7 @@ body{
     position:absolute;
     margin-left:-100px;
     background:#0099cc;
-    color:white;
+    /*color:white;*/
     padding:10px;
     border:2px solid #999999;
     box-shadow: 0 0 10px #a6a6a6;
@@ -39,6 +39,7 @@ body{
 }
 .show-all-btn:hover{
     cursor:pointer;
+    opacity:.9;
 }
 .content-container{
     margin:0 auto;
@@ -142,11 +143,21 @@ body{
     margin-top:10px;
     text-align:center;
 }
-#submit-final{
-    height:60px;
-    width:180px;
+.closingThoughts{
+    height:100px;
+    width:100%;
     font-size:25px;
 }
-#submit-final:hover{
+.submit-final{
+    background:#0099cc;
+    height:40px;
+    width:150px;
+    border:1px solid #999999;
+    border-radius:5px;
+    /*color:white;*/
+    font-size:20px;
+}
+.submit-final:hover{
     cursor:pointer;
+    opacity:.9;
 }
