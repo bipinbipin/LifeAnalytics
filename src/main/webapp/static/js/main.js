@@ -1,30 +1,27 @@
 $(document).ready(function(){
 
-    //set counter for accordion menu
+    //set counter for show all
     var counter = true;
 
     //hide all content fields at page load
     $(".field-content").hide();
 
-    //jQuery accordion menu
-    $(".field-header").click(function(){
-
+    //show all button
+    $(".show-all-btn").click(function(){
         if(counter){
-            $(this).parent().css("border-bottom-left-radius","0")
-                .css("border-bottom-right-radius","0");
-            $(this).children("h1").css("border-bottom-left-radius","0")
-                .css("border-bottom-right-radius","0");
-            $(this).next().slideDown(200);
+            $(this).text("Hide All");
+            $(".field-content").slideDown();
             counter = false;
         } else {
-            $(this).next().slideUp(200);
-            $(this).parent().css("border-bottom-left-radius","5px")
-                .css("border-bottom-right-radius","5px");
-            $(this).children("h1").css("border-bottom-left-radius","5px")
-                .css("border-bottom-right-radius","5px");
+            $(this).text("Show All");
+            $(".field-content").slideUp();
             counter = true;
         }
+    });
 
+    //jQuery accordion menu
+    $(".field-header").click(function(){
+        $(this).next().slideToggle(300);
     });
 
 });

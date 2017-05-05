@@ -1,4 +1,4 @@
-package SeleniumWebDriver.configuration;
+package LifeStats.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

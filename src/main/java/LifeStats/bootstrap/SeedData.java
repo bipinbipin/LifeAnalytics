@@ -1,7 +1,7 @@
-package SeleniumWebDriver.bootstrap;
+package LifeStats.bootstrap;
 
-import SeleniumWebDriver.domain.Entry;
-import SeleniumWebDriver.services.EntryService;
+import LifeStats.domain.Entry;
+import LifeStats.services.EntryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
@@ -18,15 +18,10 @@ public class SeedData implements ApplicationListener<ContextRefreshedEvent> {
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
-        generateUsers();
+        //generateUsers();
     }
 
     private void generateUsers(){
-
-        Entry entry = new Entry();
-
-        entryService.saveEntry(entry);
-
     }
 
 }

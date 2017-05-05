@@ -1,4 +1,4 @@
-package SeleniumWebDriver.domain;
+package LifeStats.domain;
 
 import javax.persistence.*;
 
@@ -15,7 +15,7 @@ public class Exercise {
     private Integer runDistance;
     private Integer bikeDistance;
     private Integer benchWeight;
-    private Integer squatWeight;
+    private Integer dips;
     private Integer pullUps;
     private String exerciseNotes;
 
@@ -61,12 +61,12 @@ public class Exercise {
         this.benchWeight = benchWeight;
     }
 
-    public Integer getSquatWeight() {
-        return squatWeight;
+    public Integer getDips() {
+        return dips;
     }
 
-    public void setSquatWeight(Integer squatWeight) {
-        this.squatWeight = squatWeight;
+    public void setDips(Integer dips) {
+        this.dips = dips;
     }
 
     public Integer getPullUps() {

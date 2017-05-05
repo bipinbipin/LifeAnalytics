@@ -1,4 +1,4 @@
-package SeleniumWebDriver.configuration;
+package LifeStats.configuration;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.orm.jpa.EntityScan;
@@ -11,8 +11,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @Configuration
 @EnableAutoConfiguration
-@EntityScan(basePackages = {"SeleniumWebDriver.domain"})
-@EnableJpaRepositories(basePackages = {"SeleniumWebDriver.repositories"})
+@EntityScan(basePackages = {"LifeStats.domain"})
+@EnableJpaRepositories(basePackages = {"LifeStats.repositories"})
 @EnableTransactionManagement
 public class RepositoryConfiguration {
 }

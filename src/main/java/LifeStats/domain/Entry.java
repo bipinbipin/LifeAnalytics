@@ -1,4 +1,4 @@
-package SeleniumWebDriver.domain;
+package LifeStats.domain;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -13,15 +13,15 @@ public class Entry {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer entryId;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Physiological physiological;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Safety safety;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Social intimacy;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Esteem esteem;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Actualization actualization;
 
     private Date entryDate;

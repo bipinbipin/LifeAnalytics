@@ -2,6 +2,11 @@
 <%@include file="../includes/navbar.jsp"%>
 
 <div class="content-container">
+    <div class="show-all-btn">Show All</div>
+
+    <%--PHYSIOLOGICAL FIELD--%>
+<form:form action="/physiological-submit" method="post" modelAttribute="Phys">
+
     <div class="physiological field">
         <div class="field-header">
             <h1>Physiological</h1>
@@ -13,29 +18,71 @@
                     <table>
                         <tr>
                             <th>Vegetable/Fruit</th>
-                            <th><input name="veg-fruit" type="number" id="veg-fruit"></th>
-                        </tr>
-                        <tr>
-                            <th>Protein</th>
-                            <th><input name="protein" type="number" id="protein"></th>
-                        </tr>
-                        <tr>
-                            <th>Dairy</th>
-                            <th><input name="dairy" type="number" id="dairy"></th>
+                            <th><input name="vegFruit" type="number"></th>
                         </tr>
                         <tr>
                             <th>Carbohydrate</th>
-                            <th><input name="carbs" type="number" id="carbs"></th>
+                            <th><input name="carbohydrate" type="number"></th>
+                        </tr>
+                        <tr>
+                            <th>Dairy</th>
+                            <th><input name="dairy" type="number"></th>
+                        </tr>
+                        <tr>
+                            <th>Protein</th>
+                            <th><input name="protein" type="number"></th>
                         </tr>
                         <tr>
                             <th>Sugar</th>
-                            <th><input name="sugar" type="number" id="sugars"></th>
+                            <th><input name="sugar" type="number"></th>
                         </tr>
                     </table>
                 </div>
                 <div class="notes">
-                    <textarea placeholder="Notes..." name="diet-notes" type="text" cols="30" rows="5"></textarea>
+                    <textarea placeholder="Notes..." name="dietNotes" type="text" cols="30" rows="3"></textarea>
                 </div>
+                <h2>Exercise</h2>
+                <div class="subfield-contents">
+                    <table>
+                        <tr>
+                            <th>Run</th>
+                            <th><input name="run" type="number"></th>
+                        </tr>
+                        <tr>
+                            <th>Bike</th>
+                            <th><input name="bike" type="number"></th>
+                        </tr>
+                        <tr>
+                            <th>Bench</th>
+                            <th><input name="bench" type="number"></th>
+                        </tr>
+                        <tr>
+                            <th>Dips</th>
+                            <th><input name="dip" type="number"></th>
+                        </tr>
+                        <tr>
+                            <th>Pull-up</th>
+                            <th><input name="pullUp" type="number"></th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="notes">
+                    <textarea placeholder="Notes..." name="exerciseNotes" type="text" cols="30" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+<button>Submit</button>
+</form:form>
+
+    <%--SAFETY FIELD--%>
+
+    <div class="safety field">
+        <div class="field-header">
+            <h1>Safety</h1>
+        </div>
+        <div class="field-content">
+            <div class="subfield">
                 <h2>Health</h2>
                 <div class="subfield-contents">
                     <table>
@@ -45,11 +92,11 @@
                         </tr>
                         <tr>
                             <th>Energy Level</th>
-                            <th><input name="energyLevel" type="number"></th>
+                            <th><input max="5" min="1" placeholder="1-5"  name="energyLevel" type="number"></th>
                         </tr>
                         <tr>
                             <th>Sleep Hours</th>
-                            <th><input name="sleepHours" type="number"></th>
+                            <th><input max="12" min="1" placeholder="1-12"  name="sleepHours" type="number"></th>
                         </tr>
                         <tr>
                             <th>Sleep Quality</th>
@@ -58,77 +105,16 @@
                     </table>
                 </div>
                 <div class="notes">
-                    <textarea placeholder="Notes..." name="health-notes" type="text" cols="30" rows="5"></textarea>
-                </div>
-                <h2>Exercise</h2>
-                <div class="subfield-contents">
-                    <div class="aerobic">
-                        <h3>Aerobic</h3>
-                        <div class="aerobic-select">
-                            Ran <select name="run-distance">
-                            <option selected value="0">0</option>
-                            <option  value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select> Miles <br><br>
-                            Bike <select name="bike-distance">
-                            <option selected value="0">0</option>
-                            <option value="1">2</option>
-                            <option value="2">4</option>
-                            <option value="3">6</option>
-                            <option value="4">8</option>
-                            <option value="5">10</option>
-                            <option value="6">12</option>
-                            <option value="7">14</option>
-                            <option value="8">16</option>
-                            <option value="9">18</option>
-                            <option value="10">20</option>
-                        </select> Miles
-                        </div>
-                    </div>
-                    <div class="anaerobic">
-                        <h3>Anaerobic</h3>
-                        <table>
-                            <tr>
-                                <th>Bench</th>
-                                <th><input type="number" id="bench"></th>
-                            </tr>
-                            <tr>
-                                <th>Dips</th>
-                                <th><input type="number" id="squat"></th>
-                            </tr>
-                            <tr>
-                                <th>Pull-up</th>
-                                <th><input type="number" id="pullup"></th>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="notes">
-                    <textarea placeholder="Notes..." name="exercise-notes" type="text" cols="30" rows="5"></textarea>
+                    <textarea placeholder="Notes..." name="health-notes" type="text" cols="30" rows="3"></textarea>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="safety field">
-        <div class="field-header">
-            <h1>Safety</h1>
-        </div>
-        <div class="field-content">
             <div class="subfield">
-                <h2>Weather</h2>
+                <h2>Environment</h2>
                 <div class="subfield-contents">
                     <table>
                         <tr>
                             <th>Temperature</th>
-                            <th><input type="number"></th>
+                            <th><input name="temperature" type="number"></th>
                         </tr>
                         <tr>
                             <th>Precipitation</th>
@@ -144,11 +130,15 @@
                         </tr>
                         <tr>
                             <th>Sun Exposure (min)</th>
-                            <th><input type="number" id="exposure"></th>
+                            <th><input name="exposure" type="number"></th>
                         </tr>
                         <tr>
                             <th>Life-Threatening Event</th>
-                            <th><input type="checkbox"></th>
+                            <th><input name="lifeThreat" type="checkbox"></th>
+                        </tr>
+                        <tr>
+                            <th>Financial Stress</th>
+                            <th><input name="financialStress" type="checkbox"></th>
                         </tr>
                     </table>
                 </div>
@@ -158,13 +148,16 @@
             </div>
         </div>
     </div>
+
+    <%--SOCIAL FIELD--%>
+
     <div class="social field">
         <div class="field-header">
             <h1>Social</h1>
         </div>
         <div class="field-content">
             <div class="subfield">
-                <h2>Friendships</h2>
+                <h2>Friendship</h2>
                 <div class="subfield-contents">
                     <table>
                         <tr>
@@ -215,6 +208,9 @@
             </div>
         </div>
     </div>
+
+    <%--ESTEEM FIELD--%>
+
     <div class="esteem field">
         <div class="field-header">
             <h1>Esteem</h1>
@@ -268,6 +264,9 @@
             </div>
         </div>
     </div>
+
+    <%--ACTUALIZATION FIELD--%>
+
     <div class="actualization field">
         <div class="field-header">
             <h1>Actualization</h1>
@@ -284,16 +283,11 @@
                     <img src="../../../static/img/level7.jpg" alt="level 7">
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="field">
-        <div class="field-header">
-            <h1>Closing Thoughts</h1>
-        </div>
-        <div class="field-content">
+            <h4>Closing Notes</h4>
             <textarea id="closing-thoughts" name="closing-thoughts" ></textarea>
         </div>
     </div>
+
     <div class="submit-container">
         <button id="submit-final" type="submit">Submit</button>
     </div>

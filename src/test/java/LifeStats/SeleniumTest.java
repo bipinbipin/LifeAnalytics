@@ -1,4 +1,4 @@
-package SeleniumWebDriver;
+package LifeStats;
 
 
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package SeleniumWebDriver.domain;
+package LifeStats.domain;
 
 import javax.persistence.*;
 

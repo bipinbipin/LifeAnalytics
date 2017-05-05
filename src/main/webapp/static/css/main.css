@@ -1,7 +1,6 @@
 body{
     margin:0;
     font-family:'Ubuntu';
-
 }
 .navbar-container{
     color:white;
@@ -28,6 +27,18 @@ body{
     cursor:pointer;
     background:#3399ff;
 }
+.show-all-btn{
+    position:absolute;
+    margin-left:-100px;
+    background:#0099cc;
+    color:white;
+    padding:10px;
+    border:2px solid #999999;
+    box-shadow: 0 0 10px #a6a6a6;
+}
+.show-all-btn:hover{
+    cursor:pointer;
+}
 .content-container{
     margin:0 auto;
     width:900px;
@@ -36,12 +47,11 @@ body{
 }
 .field{
     background:whitesmoke;
-    border-radius:5px;
     margin-bottom:15px;
     box-shadow: 0 0 10px #a6a6a6;
 }
 .field-header{
-    border-radius:5px;
+    border:1px solid #999999;
 }
 .field-header:hover{
     cursor:pointer;
