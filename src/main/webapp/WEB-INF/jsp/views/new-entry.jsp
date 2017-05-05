@@ -7,7 +7,7 @@
 
     <div class="show-all-btn">Show All</div>
 
-    <form:form action="/physiological-submit" method="post" modelAttribute="EntryVO">
+    <form:form action="/entry-submit" method="post" modelAttribute="EntryVO">
 
         <%--PHYSIOLOGICAL--%>
         <div class="physiological field">
@@ -251,13 +251,11 @@
                     <input required name="actualizationLevel" type="number" >
                 </div>
                 <h4>Closing Notes</h4>
-                <textarea name="closingNotes" class="closingThoughts" ></textarea>
+                <textarea name="closingNotes" class="closing-thoughts" ></textarea>
             </div>
         </div>
 
-        <div class="submit-container">
-            <button class="submit-final" type="submit">Submit</button>
-        </div>
+        <div class="submit-final">SUBMIT</div>
 
     </form:form>
 

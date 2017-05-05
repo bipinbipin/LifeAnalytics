@@ -40,7 +40,7 @@ public class AdminController {
         return "/views/new-entry";
     }
 
-    @RequestMapping(value = "/physiological-submit",method = RequestMethod.POST)
+    @RequestMapping(value = "/entry-submit",method = RequestMethod.POST)
     public String physTest(EntryVO entryVO){
 
         Entry entry = hydrateEntry(entryVO);

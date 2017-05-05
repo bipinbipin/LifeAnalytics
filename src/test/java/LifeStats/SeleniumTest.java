@@ -97,6 +97,8 @@ public class SeleniumTest {
         input.click();
         input = driver.findElement(By.name("intellectualQuality"));
         input.sendKeys("4");
+        input = driver.findElement(By.name("intellectualNotes"));
+        input.sendKeys("Felt challenged.");
         input = driver.findElement(By.name("workHours"));
         input.sendKeys("10");
         input = driver.findElement(By.name("workQuality"));
@@ -107,8 +109,9 @@ public class SeleniumTest {
         input.sendKeys("6");
         input = driver.findElement(By.name("closingNotes"));
         input.sendKeys("Today was a decent day.");
-        Thread.sleep(10000);
-        input.submit();
+
+//        Thread.sleep(10000);
+//        input.submit();
 
 
 //        driver.quit();
