@@ -6,15 +6,16 @@ import javax.persistence.*;
  * Created by David Franzel on 4/28/2017.
  */
 @Entity
+
 public class Physiological {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer physiologicalId;
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Exercise exercise;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Diet diet;
 
     public Physiological(){}
@@ -42,4 +43,5 @@ public class Physiological {
     public void setDiet(Diet diet) {
         this.diet = diet;
     }
+
 }

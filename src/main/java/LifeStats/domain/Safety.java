@@ -12,21 +12,19 @@ public class Safety {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer safetyId;
 
+    private Integer energyLevel;
+    private Integer sleepHours;
+    private Integer sleepQuality;
+    private Boolean isSick;
+    private String healthNotes;
     private Integer temperature;
-    private Boolean isPrecipitation;
+    private String precipitation;
     private Integer sunExposure;
     private Boolean lifeThreatened;
-    private String safetyNotes;
+    private Boolean financialStress;
+    private String environmentNotes;
 
     public Safety(){}
-
-    public String getSafetyNotes() {
-        return safetyNotes;
-    }
-
-    public void setSafetyNotes(String safetyNotes) {
-        this.safetyNotes = safetyNotes;
-    }
 
     public Integer getSafetyId() {
         return safetyId;
@@ -34,6 +32,46 @@ public class Safety {
 
     public void setSafetyId(Integer safetyId) {
         this.safetyId = safetyId;
+    }
+
+    public Integer getEnergyLevel() {
+        return energyLevel;
+    }
+
+    public void setEnergyLevel(Integer energyLevel) {
+        this.energyLevel = energyLevel;
+    }
+
+    public Integer getSleepHours() {
+        return sleepHours;
+    }
+
+    public void setSleepHours(Integer sleepHours) {
+        this.sleepHours = sleepHours;
+    }
+
+    public Integer getSleepQuality() {
+        return sleepQuality;
+    }
+
+    public void setSleepQuality(Integer sleepQuality) {
+        this.sleepQuality = sleepQuality;
+    }
+
+    public Boolean getIsSick() {
+        return isSick;
+    }
+
+    public void setIsSick(Boolean isSick) {
+        this.isSick = isSick;
+    }
+
+    public String getHealthNotes() {
+        return healthNotes;
+    }
+
+    public void setHealthNotes(String healthNotes) {
+        this.healthNotes = healthNotes;
     }
 
     public Integer getTemperature() {
@@ -44,12 +82,12 @@ public class Safety {
         this.temperature = temperature;
     }
 
-    public Boolean getIsPrecipitation() {
-        return isPrecipitation;
+    public String getPrecipitation() {
+        return precipitation;
     }
 
-    public void setIsPrecipitation(Boolean isPrecipitation) {
-        this.isPrecipitation = isPrecipitation;
+    public void setPrecipitation(String precipitation) {
+        this.precipitation = precipitation;
     }
 
     public Integer getSunExposure() {
@@ -66,5 +104,21 @@ public class Safety {
 
     public void setLifeThreatened(Boolean lifeThreatened) {
         this.lifeThreatened = lifeThreatened;
+    }
+
+    public Boolean getFinancialStress() {
+        return financialStress;
+    }
+
+    public void setFinancialStress(Boolean financialStress) {
+        this.financialStress = financialStress;
+    }
+
+    public String getEnvironmentNotes() {
+        return environmentNotes;
+    }
+
+    public void setEnvironmentNotes(String environmentNotes) {
+        this.environmentNotes = environmentNotes;
     }
 }

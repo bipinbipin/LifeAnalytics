@@ -3,68 +3,50 @@ package LifeStats.domain;
 import javax.persistence.*;
 
 /**
- * Created by David Franzel on 4/28/2017.
+ * Created by David Franzel on 5/4/2017.
  */
 @Entity
 public class Social {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer intimacyId;
+    private Integer socialId;
 
-    private Integer sexLength;
-    private Integer sexQuality;
-    private Integer socialInteractionCount;
-    private Integer socialQuality;
-    private String intimacyNotes;
+    private Integer interactions;
+    private Integer interactionQuality;
+    private String socialNotes;
 
     public Social(){}
 
-    public Integer getIntimacyId() {
-        return intimacyId;
+    public String getSocialNotes() {
+        return socialNotes;
     }
 
-    public void setIntimacyId(Integer intimacyId) {
-        this.intimacyId = intimacyId;
+    public void setSocialNotes(String socialNotes) {
+        this.socialNotes = socialNotes;
     }
 
-    public Integer getSexLength() {
-        return sexLength;
+    public Integer getInteractionQuality() {
+        return interactionQuality;
     }
 
-    public void setSexLength(Integer sexLength) {
-        this.sexLength = sexLength;
+    public void setInteractionQuality(Integer interactionQuality) {
+        this.interactionQuality = interactionQuality;
     }
 
-    public Integer getSexQuality() {
-        return sexQuality;
+    public Integer getInteractions() {
+        return interactions;
     }
 
-    public void setSexQuality(Integer sexQuality) {
-        this.sexQuality = sexQuality;
+    public void setInteractions(Integer interactions) {
+        this.interactions = interactions;
     }
 
-    public Integer getSocialInteractionCount() {
-        return socialInteractionCount;
+    public Integer getSocialId() {
+        return socialId;
     }
 
-    public void setSocialInteractionCount(Integer socialInteractionCount) {
-        this.socialInteractionCount = socialInteractionCount;
-    }
-
-    public Integer getSocialQuality() {
-        return socialQuality;
-    }
-
-    public void setSocialQuality(Integer socialQuality) {
-        this.socialQuality = socialQuality;
-    }
-
-    public String getIntimacyNotes() {
-        return intimacyNotes;
-    }
-
-    public void setIntimacyNotes(String intimacyNotes) {
-        this.intimacyNotes = intimacyNotes;
+    public void setSocialId(Integer socialId) {
+        this.socialId = socialId;
     }
 }

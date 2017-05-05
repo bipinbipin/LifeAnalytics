@@ -2,11 +2,13 @@
 <%@include file="../includes/navbar.jsp"%>
 
 <div class="content-container">
+
+    <%@include file="../includes/description.jsp"%>
+
     <div class="show-all-btn">Show All</div>
 
     <%--PHYSIOLOGICAL FIELD--%>
-<form:form action="/physiological-submit" method="post" modelAttribute="Phys">
-
+<form:form action="/physiological-submit" method="post" modelAttribute="EntryVO">
     <div class="physiological field">
         <div class="field-header">
             <h1>Physiological</h1>
@@ -72,8 +74,6 @@
             </div>
         </div>
     </div>
-<button>Submit</button>
-</form:form>
 
     <%--SAFETY FIELD--%>
 
@@ -87,10 +87,6 @@
                 <div class="subfield-contents">
                     <table>
                         <tr>
-                            <th>Sick</th>
-                            <th><input name="sick" type="checkbox"></th>
-                        </tr>
-                        <tr>
                             <th>Energy Level</th>
                             <th><input max="5" min="1" placeholder="1-5"  name="energyLevel" type="number"></th>
                         </tr>
@@ -102,10 +98,14 @@
                             <th>Sleep Quality</th>
                             <th><input max="5" min="1" placeholder="1-5"  name="sleepQuality" type="number"></th>
                         </tr>
+                        <tr>
+                            <th>Sick</th>
+                            <th><input name="sick" type="checkbox"></th>
+                        </tr>
                     </table>
                 </div>
                 <div class="notes">
-                    <textarea placeholder="Notes..." name="health-notes" type="text" cols="30" rows="3"></textarea>
+                    <textarea placeholder="Notes..." name="healthNotes" type="text" cols="30" rows="3"></textarea>
                 </div>
             </div>
             <div class="subfield">
@@ -130,11 +130,11 @@
                         </tr>
                         <tr>
                             <th>Sun Exposure (min)</th>
-                            <th><input name="exposure" type="number"></th>
+                            <th><input name="sunExposure" type="number"></th>
                         </tr>
                         <tr>
                             <th>Life-Threatening Event</th>
-                            <th><input name="lifeThreat" type="checkbox"></th>
+                            <th><input name="lifeThreatened" type="checkbox"></th>
                         </tr>
                         <tr>
                             <th>Financial Stress</th>
@@ -143,7 +143,7 @@
                     </table>
                 </div>
                 <div class="notes">
-                    <textarea placeholder="Notes..." name="weather-notes" type="text" cols="30" rows="3"></textarea>
+                    <textarea placeholder="Notes..." name="environmentNotes" type="text" cols="30" rows="3"></textarea>
                 </div>
             </div>
         </div>
@@ -157,53 +157,21 @@
         </div>
         <div class="field-content">
             <div class="subfield">
-                <h2>Friendship</h2>
+                <h2>Social Connection</h2>
                 <div class="subfield-contents">
                     <table>
                         <tr>
                             <th>Interactions</th>
-                            <th><input type="number" name="interaction-count"></th>
+                            <th><input type="number" name="interactions"></th>
                         </tr>
                         <tr>
                             <th>Quality</th>
-                            <th><input max="5" min="1" placeholder="1-5" type="number" name="interaction-quality" placeholder="1 - 5"></th>
+                            <th><input max="5" min="1" placeholder="1-5" type="number" name="interactionQuality" placeholder="1 - 5"></th>
                         </tr>
                     </table>
                 </div>
                 <div class="notes">
-                    <textarea placeholder="Notes..." name="social-notes" type="text" cols="30" rows="3"></textarea>
-                </div>
-                <h2>Intimacy</h2>
-                <div class="subfield-contents">
-                    <table>
-                        <tr>
-                            <th>Sexual Intimacy</th>
-                            <th><input type="checkbox" name="sex"></th>
-                        </tr>
-                        <tr>
-                            <th>Quality</th>
-                            <th><input max="5" min="1" placeholder="1-5"  type="number" name="sex-quality" placeholder="1 - 5"></th>
-                        </tr>
-                    </table>
-                </div>
-                <div class="notes">
-                    <textarea placeholder="Notes..." name="sex-notes" type="text" cols="30" rows="3"></textarea>
-                </div>
-                <h2>Family</h2>
-                <div class="subfield-contents">
-                    <table>
-                        <tr>
-                            <th>Family</th>
-                            <th><input type="checkbox" name="family"></th>
-                        </tr>
-                        <tr>
-                            <th>Quality</th>
-                            <th><input max="5" min="1" placeholder="1-5" type="number" name="family-quality" placeholder="1 - 5"></th>
-                        </tr>
-                    </table>
-                </div>
-                <div class="notes">
-                    <textarea placeholder="Notes..." name="family-notes" type="text" cols="30" rows="3"></textarea>
+                    <textarea placeholder="Notes..." name="socialNotes" type="text" cols="30" rows="3"></textarea>
                 </div>
             </div>
         </div>
@@ -222,44 +190,44 @@
                     <table>
                         <tr>
                             <th>Reading</th>
-                            <th><input type="checkbox"></th>
+                            <th><input name="reading" type="checkbox"></th>
                         </tr>
                         <tr>
                             <th>Video</th>
-                            <th><input type="checkbox"></th>
+                            <th><input name="video" type="checkbox"></th>
                         </tr>
                         <tr>
                             <th>Podcast</th>
-                            <th><input type="checkbox"></th>
+                            <th><input name="podcast" type="checkbox"></th>
                         </tr>
                         <tr>
                             <th>Conversation</th>
-                            <th><input type="checkbox"></th>
+                            <th><input name="conversation" type="checkbox"></th>
                         </tr>
                         <tr>
                             <th>Quality</th>
-                            <th><input max="5" min="1" placeholder="1-5" type="number"></th>
+                            <th><input name="intellectualQuality" max="5" min="1" placeholder="1-5" type="number"></th>
                         </tr>
                     </table>
                 </div>
                 <div class="notes">
-                    <textarea placeholder="Notes..." name="intellectual-notes" id="thoughts" cols="30" rows="3"></textarea>
+                    <textarea placeholder="Notes..." name="intellectualNotes" id="thoughts" cols="30" rows="3"></textarea>
                 </div>
                 <h2>Work</h2>
                 <div class="subfield-contents">
                     <table>
                         <tr>
                             <th>Hours</th>
-                            <th><input type="number" id="hours"></th>
+                            <th><input name="workHours" type="number"></th>
                         </tr>
                         <tr>
                             <th>Work Quality</th>
-                            <th><input max="5" min="1" placeholder="1-5" type="number" id="work-quality"></th>
+                            <th><input name="workQuality" max="5" min="1" placeholder="1-5" type="number"></th>
                         </tr>
                     </table>
                 </div>
                 <div class="notes">
-                    <textarea placeholder="Notes..." name="work-notes" cols="30" rows="3"></textarea>
+                    <textarea placeholder="Notes..." name="workNotes" cols="30" rows="3"></textarea>
                 </div>
             </div>
         </div>
@@ -282,15 +250,18 @@
                     <img src="../../../static/img/level6.jpg" alt="level 6">
                     <img src="../../../static/img/level7.jpg" alt="level 7">
                 </div>
+                Actualization Level
+                <input name="actualizationLevel" type="number" >
             </div>
             <h4>Closing Notes</h4>
-            <textarea id="closing-thoughts" name="closing-thoughts" ></textarea>
+            <textarea name="closingNotes" ></textarea>
         </div>
     </div>
 
     <div class="submit-container">
         <button id="submit-final" type="submit">Submit</button>
     </div>
+</form:form>
 </div>
 
 <%@include file="../includes/footer.jsp"%>

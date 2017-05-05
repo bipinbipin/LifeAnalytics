@@ -1,5 +1,8 @@
 package LifeStats.domain;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -13,20 +16,29 @@ public class Entry {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer entryId;
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Physiological physiological;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Safety safety;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Social intimacy;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Social social;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Esteem esteem;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Actualization actualization;
+
+    private Integer actualization;
+    private String closingNotes;
 
     private Date entryDate;
 
     public Entry(){}
+
+    public String getClosingNotes() {
+        return closingNotes;
+    }
+
+    public void setClosingNotes(String closingNotes) {
+        this.closingNotes = closingNotes;
+    }
 
     public Date getEntryDate(){
         return entryDate;
@@ -60,12 +72,12 @@ public class Entry {
         this.safety = safety;
     }
 
-    public Social getIntimacy() {
-        return intimacy;
+    public Social getSocial() {
+        return social;
     }
 
-    public void setIntimacy(Social intimacy) {
-        this.intimacy = intimacy;
+    public void setSocial(Social social) {
+        this.social = social;
     }
 
     public Esteem getEsteem() {
@@ -76,11 +88,11 @@ public class Entry {
         this.esteem = esteem;
     }
 
-    public Actualization getActualization() {
+    public Integer getActualization() {
         return actualization;
     }
 
-    public void setActualization(Actualization actualization) {
+    public void setActualization(Integer actualization) {
         this.actualization = actualization;
     }
 }

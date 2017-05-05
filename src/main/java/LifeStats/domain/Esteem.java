@@ -12,10 +12,15 @@ public class Esteem {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer esteemId;
 
-    private Integer workProductivity;
-    private Integer wealthMaintenance;
-    private Integer knowledgeGain;
-    private String esteemNotes;
+    private Boolean reading;
+    private Boolean video;
+    private Boolean podcast;
+    private Boolean conversation;
+    private Integer intellectualQuality;
+    private String intellectualNotes;
+    private Integer workHours;
+    private Integer workQuality;
+    private String workNotes;
 
     public Esteem(){}
 
@@ -27,35 +32,75 @@ public class Esteem {
         this.esteemId = esteemId;
     }
 
-    public Integer getWorkProductivity() {
-        return workProductivity;
+    public Boolean getReading() {
+        return reading;
     }
 
-    public void setWorkProductivity(Integer workProductivity) {
-        this.workProductivity = workProductivity;
+    public void setReading(Boolean reading) {
+        this.reading = reading;
     }
 
-    public Integer getWealthMaintenance() {
-        return wealthMaintenance;
+    public Boolean getVideo() {
+        return video;
     }
 
-    public void setWealthMaintenance(Integer wealthMaintenance) {
-        this.wealthMaintenance = wealthMaintenance;
+    public void setVideo(Boolean video) {
+        this.video = video;
     }
 
-    public Integer getKnowledgeGain() {
-        return knowledgeGain;
+    public Boolean getPodcast() {
+        return podcast;
     }
 
-    public void setKnowledgeGain(Integer knowledgeGain) {
-        this.knowledgeGain = knowledgeGain;
+    public void setPodcast(Boolean podcast) {
+        this.podcast = podcast;
     }
 
-    public String getEsteemNotes() {
-        return esteemNotes;
+    public Boolean getConversation() {
+        return conversation;
     }
 
-    public void setEsteemNotes(String esteemNotes) {
-        this.esteemNotes = esteemNotes;
+    public void setConversation(Boolean conversation) {
+        this.conversation = conversation;
+    }
+
+    public Integer getIntellectualQuality() {
+        return intellectualQuality;
+    }
+
+    public void setIntellectualQuality(Integer intellectualQuality) {
+        this.intellectualQuality = intellectualQuality;
+    }
+
+    public String getIntellectualNotes() {
+        return intellectualNotes;
+    }
+
+    public void setIntellectualNotes(String intellectualNotes) {
+        this.intellectualNotes = intellectualNotes;
+    }
+
+    public Integer getWorkHours() {
+        return workHours;
+    }
+
+    public void setWorkHours(Integer workHours) {
+        this.workHours = workHours;
+    }
+
+    public Integer getWorkQuality() {
+        return workQuality;
+    }
+
+    public void setWorkQuality(Integer workQuality) {
+        this.workQuality = workQuality;
+    }
+
+    public String getWorkNotes() {
+        return workNotes;
+    }
+
+    public void setWorkNotes(String workNotes) {
+        this.workNotes = workNotes;
     }
 }

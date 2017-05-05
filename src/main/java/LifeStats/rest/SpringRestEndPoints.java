@@ -1,8 +1,9 @@
 package LifeStats.rest;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import LifeStats.domain.Entry;
+import LifeStats.services.EntryService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by David Franzel on 4/27/2017.
@@ -11,9 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class SpringRestEndPoints {
 
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
-    public String test(){
-        return "test";
+    @Autowired
+    private EntryService entryService;
+
+    @RequestMapping(value = "/entry/{id}", method = RequestMethod.GET)
+    public Entry test(@PathVariable int id){
+
+        return entryService.getEntryById(id);
     }
 
 }
